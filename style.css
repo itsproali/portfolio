@@ -10,7 +10,7 @@ body {
 .content {
     width: 85%;
     display: flex;
-    margin: auto;
+    margin: 0 auto 100px;
     padding: 50px 0;
 }
 
@@ -64,7 +64,6 @@ body {
     background-image: url('images/dream-bg.png');
     background-repeat: no-repeat;
     background-position: bottom right;
-    margin: 50px 0 0;
 }
 .dream .content .image {
     margin-right: 50px;
@@ -111,10 +110,10 @@ body {
     background-image: url('images/exp-bg.png');
     background-repeat: no-repeat;
     background-position: center left;
-    margin: 150px 0 0;
 }
 .exp-head {
     text-align: center;
+    margin-bottom: 30px;
 }
 .exp-head h1 {
     display: inline-block;
@@ -153,7 +152,7 @@ body {
 /* Footer Section */
 
 footer {
-    margin: 100px 0 15px;
+    margin: 50px 0 15px;
     text-align: center;
 }
 footer p {
@@ -164,4 +163,97 @@ footer p {
 footer a {
     color: tomato;
     text-decoration: none;
+}
+
+/* Contact Section */
+
+.contact .head {
+    display: block;
+    text-align: center;
+}
+.contact  h1 {
+    display: inline-block;
+    font-size: 45px;
+    color: tomato;
+    padding: 5px 0;
+    border-bottom: 5px dotted tomato;
+}
+.contact .content {
+    flex-direction: wrap;
+}
+.contact h2 {
+    text-align: center;
+    color: darkorange;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.form {
+    width: 50%;
+    flex-grow: 1;
+}
+.form form {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+.form input[type=text],[type=email] {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 20px 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    box-sizing: border-box;
+}
+.form textarea {
+    width: 86%;
+    margin: 20px 15px;
+    resize: none;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid gray;
+    font-family: 'Roboto', sans-serif;
+}
+.form input:focus {
+    background-color: lightyellow;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid tomato;
+}
+.form textarea:focus {
+    outline: none;
+    border: 2px solid tomato;
+    background-color: lightyellow;
+}
+.form [type=submit] {
+    margin:  1% 0 0 73%;
+    color: white;
+    background-color: tomato;
+    font-size: 18px;
+    padding: 8px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+    border: none;
+}
+.form [type=submit]:hover {
+    background-color: rgb(255, 140, 40);
+}
+.social {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.links {
+    margin: 100px 0 0 0;
+}
+.links a {
+    display: inline-block;
+    font-size: 30px;
+    color: tomato;
+    margin: 8px;
+    transition: .4s;
+}
+.links a:hover {
+    color: darkorange;
 }
